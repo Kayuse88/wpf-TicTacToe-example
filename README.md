@@ -1,4 +1,7 @@
 # wpf-TicTacToe-example
+
+![Screenshot](./tictactoe.png)
+
 Example TicTacToe game project of MVC, MVP, MVVM design patterns.  
 This project is conversion of Eric Maxwell's TicTacToe for android.
 
