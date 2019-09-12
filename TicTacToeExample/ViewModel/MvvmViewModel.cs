@@ -8,10 +8,10 @@ using static TicTacToeExample.Model.Players;
 
 namespace TicTacToeExample.ViewModel
 {
-    public class MvvmViewModel : ObservableObject
+    public class MvvmViewModel : ViewModelBase
     {
         #region InnerClasses
-        public class Cell : ObservableObject
+        public class Cell : ViewModelBase
         {
             private Player? _marker;
 
