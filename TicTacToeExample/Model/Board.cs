@@ -4,7 +4,7 @@ namespace TicTacToeExample.Model
 {
     // Eric Maxwell의 TicTacToe 참고.
     // https://github.com/ericmaxwell2003/ticTacToe
-    class Board
+    public class Board
     {
         private Cell[,] cells = new Cell[3, 3];
 
@@ -96,7 +96,6 @@ namespace TicTacToeExample.Model
         {
             return cells[row, col].GetValue() != null;
         }
-
 
         private bool IsWinningMoveByPlayer(Player player, int currentRow, int currentCol)
         {

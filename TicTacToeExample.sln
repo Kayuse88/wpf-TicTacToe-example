@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToeExample", "TicTacToeExample\TicTacToeExample.csproj", "{36AFB741-F1A3-46CB-97C1-C2F4AFC74B1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToeExample.Test", "TicTacToeExample.Test\TicTacToeExample.Test.csproj", "{DE3F7EB0-4C65-4983-82D4-444D7D5D135E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToeExample.Tests", "TicTacToeExample.Tests\TicTacToeExample.Tests.csproj", "{DE3F7EB0-4C65-4983-82D4-444D7D5D135E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
