@@ -1,8 +1,6 @@
-﻿using System.ComponentModel;
-using TicTacToeExample.Model;
-using static TicTacToeExample.Model.Players;
+﻿using TicTacToeExample.Model;
 using Xunit;
-using Xunit.Sdk;
+using static TicTacToeExample.Model.Players;
 
 namespace TicTacToeExample.Test.Model
 {

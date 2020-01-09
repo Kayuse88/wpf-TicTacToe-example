@@ -46,7 +46,7 @@ namespace TicTacToeExample.View
         private void TicTacToe_Click(object sender, RoutedEventArgs e)
         {
             Button button = sender as Button;
-            
+
             int row = Convert.ToInt32(((string)button.Tag).Substring(0, 1));
             int col = Convert.ToInt32(((string)button.Tag).Substring(1, 1));
 
