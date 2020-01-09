@@ -10,30 +10,6 @@ namespace TicTacToeExample.ViewModel
 {
     public class MvvmViewModel : ViewModelBase
     {
-        #region InnerClasses
-        public class Cell : ViewModelBase
-        {
-            private Player? _marker;
-
-            public string RowCol { get; private set; }
-            public Player? Marker
-            {
-                get { return _marker; }
-                set
-                {
-                    _marker = value;
-                    NotifyPropertyChanged();
-                }
-            }
-
-            public Cell(int row, int col)
-            {
-                string rowcol = "" + row + col;
-                RowCol = rowcol;
-            }
-        }
-        #endregion
-
         #region Fields
         private string _winner;
         private ObservableCollection<Cell> _cells;

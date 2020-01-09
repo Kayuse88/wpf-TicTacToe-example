@@ -1,21 +1,33 @@
-﻿using static TicTacToeExample.Model.Players;
+﻿using TicTacToeExample.ViewModel;
+using static TicTacToeExample.Model.Players;
 
 namespace TicTacToeExample.Model
 {
     // Eric Maxwell의 TicTacToe 참고.
     // https://github.com/ericmaxwell2003/ticTacToe
-    class Cell
+    public class Cell : ViewModelBase
     {
-        private Player? value;
+        private Player? _marker;
 
-        public Player? GetValue()
+        public string RowCol { get; private set; }
+        public Player? Marker
         {
-            return value;
+            get { return _marker; }
+            set
+            {
+                _marker = value;
+                NotifyPropertyChanged();
+            }
         }
 
-        public void SetValue(Player player)
+        public Cell()
         {
-            value = player;
+        }
+
+        public Cell(int row, int col)
+        {
+            string rowcol = "" + row + col;
+            RowCol = rowcol;
         }
     }
 }

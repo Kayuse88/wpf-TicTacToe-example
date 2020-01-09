@@ -33,8 +33,7 @@ namespace TicTacToeExample.Model
 
             if (IsValid(row, col))
             {
-
-                cells[row, col].SetValue(currentTurn);
+                cells[row, col].Marker = currentTurn;
                 playerThatMoved = currentTurn;
 
                 if (IsWinningMoveByPlayer(currentTurn, row, col))
@@ -94,25 +93,25 @@ namespace TicTacToeExample.Model
 
         private bool IsCellValueAlreadySet(int row, int col)
         {
-            return cells[row, col].GetValue() != null;
+            return cells[row, col].Marker != null;
         }
 
         private bool IsWinningMoveByPlayer(Player player, int currentRow, int currentCol)
         {
-            return (cells[currentRow, 0].GetValue() == player         // 3-in-the-row
-                    && cells[currentRow, 1].GetValue() == player
-                    && cells[currentRow, 2].GetValue() == player
-                    || cells[0, currentCol].GetValue() == player      // 3-in-the-column
-                    && cells[1, currentCol].GetValue() == player
-                    && cells[2, currentCol].GetValue() == player
+            return (cells[currentRow, 0].Marker == player         // 3-in-the-row
+                    && cells[currentRow, 1].Marker == player
+                    && cells[currentRow, 2].Marker == player
+                    || cells[0, currentCol].Marker == player      // 3-in-the-column
+                    && cells[1, currentCol].Marker == player
+                    && cells[2, currentCol].Marker == player
                     || currentRow == currentCol            // 3-in-the-diagonal
-                    && cells[0, 0].GetValue() == player
-                    && cells[1, 1].GetValue() == player
-                    && cells[2, 2].GetValue() == player
+                    && cells[0, 0].Marker == player
+                    && cells[1, 1].Marker == player
+                    && cells[2, 2].Marker == player
                     || currentRow + currentCol == 2    // 3-in-the-opposite-diagonal
-                    && cells[0, 2].GetValue() == player
-                    && cells[1, 1].GetValue() == player
-                    && cells[2, 0].GetValue() == player);
+                    && cells[0, 2].Marker == player
+                    && cells[1, 1].Marker == player
+                    && cells[2, 0].Marker == player);
         }
 
         private void FlipCurrentTurn()
