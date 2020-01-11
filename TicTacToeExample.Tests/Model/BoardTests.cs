@@ -15,14 +15,14 @@ namespace TicTacToeExample.Test.Model
         [Fact]
         public void RestartTest()
         {
-            MarkXasWin();
+            MarkXasWinner();
 
             testBoard.Restart();
 
             Assert.Null(testBoard.GetWinner());
         }
 
-        private void MarkXasWin()
+        private void MarkXasWinner()
         {
             testBoard.Mark(0, 0);
             testBoard.Mark(1, 1);
@@ -52,7 +52,7 @@ namespace TicTacToeExample.Test.Model
         [Fact]
         public void MarkIfFinishedGame()
         {
-            MarkXasWin();
+            MarkXasWinner();
 
             var player = testBoard.Mark(2, 2);
 
