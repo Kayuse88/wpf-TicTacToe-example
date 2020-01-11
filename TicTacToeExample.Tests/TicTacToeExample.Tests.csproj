@@ -70,6 +70,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Command\SimpleCommandTests.cs" />
     <Compile Include="Model\BoardTests.cs" />
     <Compile Include="Model\CellTests.cs" />
     <Compile Include="Presenter\TicTacToePresenterTests.cs" />

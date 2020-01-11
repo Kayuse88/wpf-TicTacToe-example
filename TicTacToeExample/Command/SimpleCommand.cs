@@ -33,12 +33,6 @@ namespace TicTacToeExample.Command
         {
             method();
         }
-
-        protected void onCanExecuteChanged(EventArgs args)
-        {
-            var handler = CanExecuteChanged;
-            handler?.Invoke(this, args);
-        }
         #endregion
 
         #region ICommand Implementation
