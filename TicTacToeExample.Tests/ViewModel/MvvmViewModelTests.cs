@@ -6,7 +6,7 @@ namespace TicTacToeExample.Test.ViewModel
 {
     public class MvvmViewModelTests
     {
-        private MvvmViewModel mvvmViewModel;
+        private readonly MvvmViewModel mvvmViewModel;
 
         public MvvmViewModelTests()
         {
@@ -45,7 +45,6 @@ namespace TicTacToeExample.Test.ViewModel
             mvvmViewModel.CellCommand.Execute("01");
             mvvmViewModel.CellCommand.Execute("12");
             mvvmViewModel.CellCommand.Execute("02");
-
         }
     }
 }

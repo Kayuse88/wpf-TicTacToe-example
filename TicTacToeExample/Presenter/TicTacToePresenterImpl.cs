@@ -3,7 +3,7 @@ using static TicTacToeExample.Model.Players;
 
 namespace TicTacToeExample.Presenter
 {
-    class TicTacToePresenterImpl : ITicTacToePresenter
+    public class TicTacToePresenterImpl : ITicTacToePresenter
     {
         #region Fields
         private readonly Board model;

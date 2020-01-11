@@ -6,7 +6,7 @@ namespace TicTacToeExample.Test.Model
 {
     public class CellTests
     {
-        private Cell testCell;
+        private readonly Cell testCell;
 
         public CellTests()
         {

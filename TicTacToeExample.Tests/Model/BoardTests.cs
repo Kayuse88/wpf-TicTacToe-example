@@ -5,7 +5,7 @@ namespace TicTacToeExample.Test.Model
 {
     public class BoardTests
     {
-        private Board testBoard;
+        private readonly Board testBoard;
 
         public BoardTests()
         {

@@ -2,7 +2,7 @@
 {
     // Refer to Maxwell's TicTacToe.
     // https://github.com/ericmaxwell2003/ticTacToe
-    interface ITicTacToeView
+    public interface ITicTacToeView
     {
         void ShowWinner(string winningPlayerDisplayLabel);
         void ClearWinnerDisplay();
