@@ -11,7 +11,7 @@ namespace TicTacToeExample.Test.View
         public void CreateTest()
         {
             view = new Mvvm();
-
+        
             Assert.NotNull(view);
         }
     }

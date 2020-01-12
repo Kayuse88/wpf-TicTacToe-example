@@ -81,6 +81,8 @@
     <Compile Include="Presenter\TicTacToePresenterTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\MvvmViewModelTests.cs" />
+    <Compile Include="View\MvcTests.cs" />
+    <Compile Include="View\MvpTests.cs" />
     <Compile Include="View\MvvmTests.cs" />
   </ItemGroup>
   <ItemGroup>
